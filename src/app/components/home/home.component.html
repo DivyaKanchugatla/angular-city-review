@@ -1,0 +1,15 @@
+<div class="container-fluid create-task-container">
+    <h1>Create a new task</h1>
+    <button [routerLink]="['popup']">Create</button>
+    <br />
+    <button (click)="mytasks()">Get my Tasks</button>
+ </div>
+ <div style="display: flex; flex-wrap: wrap;">
+    <div *ngFor="let task of formArray">
+       <div class="task-container">
+             <h3>CityName: {{task.cityName}}</h3>
+             <h4>Feedback: {{task.feedback}}</h4>
+             <h5>Rating: {{task.rating}}</h5>
+       </div>
+    </div>
+ </div>

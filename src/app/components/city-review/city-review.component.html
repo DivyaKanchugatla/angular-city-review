@@ -1,0 +1,25 @@
+<div class="example" >
+    <form class="example-container" #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+      <mat-form-field>
+        <input matInput placeholder="Enter CityName" name="cityName" ngModel required>
+      </mat-form-field>
+    
+      <mat-form-field>
+        <textarea matInput placeholder="Give feedback about your visited city" name="feedback" ngModel required></textarea>
+      </mat-form-field>
+    
+      <mat-form-field>
+        <mat-select placeholder="Select Rating" name="rating" ngModel required>
+          <mat-option value="1">1</mat-option>
+          <mat-option value="2">2</mat-option>
+          <mat-option value="3">3</mat-option>
+          <mat-option value="4">4</mat-option>
+          <mat-option value="5">5</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button type="submit">Submit</button>
+    </form>  
+  </div>
+  
+
+
