@@ -1,6 +1,10 @@
 <div class="example" >
     <form class="example-container" #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
       <mat-form-field>
+        <input matInput placeholder="Enter your Name" name="name" ngModel required>
+      </mat-form-field>
+      
+      <mat-form-field>
         <input matInput placeholder="Enter CityName" name="cityName" ngModel required>
       </mat-form-field>
     

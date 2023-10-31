@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '', component: HomeComponent 
   },
   {
-    path:"popup",
+    path:"review",
     component:CityReviewComponent
   }
 ];

@@ -1,15 +1,16 @@
-<div class="container-fluid create-task-container">
-    <h1>City Reviews App</h1>
-    <button [routerLink]="['popup']">Give your review</button>
-    <br />
-    <button (click)="mytasks()">Get All Reviews</button>
- </div>
- <div style="display: flex; flex-wrap: wrap;">
-    <div *ngFor="let task of formArray">
-       <div class="task-container">
-             <h3>CityName: {{task.cityName}}</h3>
-             <h4>Feedback: {{task.feedback}}</h4>
-             <h5>Rating: {{task.rating}}</h5>
-       </div>
-    </div>
- </div>
+<div class="container-fluid create-review-container">
+   <h1>City Reviews App</h1>
+   <button [routerLink]="['review']">Give your review</button>
+   <br />
+   <button (click)="mytasks()">Get All Reviews</button>
+</div>
+<div style="display: flex; flex-wrap: wrap;">
+   <div *ngFor="let review of formArray">
+      <div class="review-container">
+         <h2>ReviewerName: {{review.name}}</h2>
+         <h3>CityName: {{review.cityName}}</h3>
+         <h4>Feedback: {{review.feedback}}</h4>
+         <h4>Rating: {{review.rating}}</h4>
+      </div>
+   </div>
+</div>

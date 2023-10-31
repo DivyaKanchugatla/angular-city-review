@@ -1,4 +1,4 @@
-.create-task-container {
+.create-review-container {
     background-color: aqua;
     height: 300px;
     display: flex;
@@ -6,12 +6,12 @@
     justify-content: center;
     align-items: center;
 }
-.task-container {
+.review-container {
     background-color: blueviolet;
     padding: 15px;
     margin: 15px;
-    width: 250px;
-    height: 170px;
+    width: 270px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
