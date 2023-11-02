@@ -9,10 +9,11 @@ import { ReviewService } from 'src/app/services/review.service';
 export class HomeComponent {
   formArray: any[] = [];
 
-  constructor(private taskService: ReviewService) { }
+  constructor(private taskService: ReviewService) {}
 
   mytasks() {
-    this.formArray = this.taskService.formArray
-    console.log("formArray", this.formArray);
+    this.formArray = this.taskService.formArray;
   }
+
+ 
 }

@@ -4,14 +4,25 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ReviewService {
-
-  constructor() { }
   formArray: any[] = [];
-  
-  handleFormSubmission(formData: any) {
-    console.log('Form data received in parent component:', formData);
-    // You can process the form data as needed.
-    this.formArray.push(formData)
-    console.log("formArray",this.formArray)
+
+  constructor() {
+    this.loadReviewsFromLocalStorage();
   }
+
+  handleFormSubmission(review: any) {
+    this.formArray.push(review);
+    localStorage.setItem('reviews', JSON.stringify(this.formArray));
+  }
+
+ 
+
+  loadReviewsFromLocalStorage() {
+    const storedReviews = localStorage.getItem('reviews');
+    if (storedReviews) {
+      this.formArray = JSON.parse(storedReviews);
+    }
+  }
+
+ 
 }

@@ -1,5 +1,5 @@
 .create-review-container {
-    background-color: aqua;
+    background-color: rgb(155, 103, 148);
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -7,9 +7,10 @@
     align-items: center;
 }
 .review-container {
-    background-color: blueviolet;
+    background-color: rgb(192, 226, 43);
     padding: 15px;
-    margin: 15px;
+    margin-top: 20px;
+    margin-left: 55px;
     width: 270px;
     height: 250px;
     display: flex;

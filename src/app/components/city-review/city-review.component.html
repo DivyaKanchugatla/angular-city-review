@@ -21,7 +21,7 @@
           <mat-option value="5">5</mat-option>
         </mat-select>
       </mat-form-field>
-      <button type="submit">Submit</button>
+      <button type="submit" [disabled]="!myForm.form.valid">Submit</button>
     </form>  
   </div>
   

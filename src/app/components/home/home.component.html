@@ -1,13 +1,16 @@
 <div class="container-fluid create-review-container">
    <h1>City Reviews App</h1>
-   <button [routerLink]="['review']">Give your review</button>
-   <br />
-   <button (click)="mytasks()">Get All Reviews</button>
+   <div style="display: flex;">
+      <button [routerLink]="['review']"
+         style="margin-right: 10px; background-color: black; color: white; border: none;">Give your review</button>
+      <button (click)="mytasks()" style="margin-right: 10px; background-color: black; color: white; border: none;">Get
+         All Reviews</button>
+   </div>
 </div>
 <div style="display: flex; flex-wrap: wrap;">
    <div *ngFor="let review of formArray">
       <div class="review-container">
-         <h2>ReviewerName: {{review.name}}</h2>
+         <h2>Name: {{review.name}}</h2>
          <h3>CityName: {{review.cityName}}</h3>
          <h4>Feedback: {{review.feedback}}</h4>
          <h4>Rating: {{review.rating}}</h4>
